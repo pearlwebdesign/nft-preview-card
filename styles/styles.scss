@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;;
+}
+.attribution { 
+  font-size: 11px;
+  text-align: center; 
+  color: white;
+  }
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+ .image{
+  width: 85%;
+  height: 270px;
+  border-radius: 10px;
+  margin: 22px;
+  margin-bottom: 0;
+}
+
+.image-container{
+  position: relative;
+}
+.image-container::before,.image-container::after{
+  background-color: hsl(178, 100%, 50%,0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 0.5em;
+  width: 85%;
+  margin: 22px;
+  margin-bottom: 0;
+}
+.image-container:hover:before,.image-container:hover:after{
+  transform: scale(1);
+  opacity: 1;
+}
+.image-container:hover > .image{
+  opacity: 1;
+}
+.image-container:hover .inner-picture{
+  opacity: 1;
+  cursor: pointer;
+}
+.inner-picture{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition-delay: 0.1s;
+}
+.main{
+  display: block;
+  justify-content: space-between;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: 170px;
+  margin-bottom: 170px;
+  width: 310px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+.main h2{
+  color:hsl(0, 0%, 100%) ;
+  font-weight: 600;
+  padding: 22px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  font-size: 21px;
+}
+h2:hover{
+  color: hsl(178, 100%, 50%,);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main p{
+  color: hsl(215, 51%, 70%,0.7);
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+
+}
+.priceAnddays{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  align-items: initial;
+}
+.price p{
+  color:hsl(178, 100%, 50%) ;
+}
+.days p{
+  color:  hsl(215, 51%, 70%);
+}
+.priceAnddays img{
+  margin-right: 10px;
+}
+.author{
+  display: flex;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+.author img{
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 60px;
+  margin-bottom: 0;
+}
+.author p{
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 15px ;
+  font-weight: 300;
+}
+span{
+  color: white;
+  margin-left: 3px;
+}
+span:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+hr{
+  border-top: 5px ;
+  border-color: hsl(215, 32%, 27%);
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+body{
+  background: hsl(217, 54%, 11%);
+}
